@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .img1{
+      width: 20vw;
+      z-index: 0;
+      position: relative;
+    }.img2 {
+       width: 22vw;
+       z-index: 1;
+       position: relative;
+       display: grid;
+       margin-top: -35vh;
+       margin-left: 35vw;
+     }
+
+    .img3{
+      width: 20vw;
+      z-index: -1;
+      position: relative;
+    }
+    p{
+      width: 20vw;
+    }
+    .tea_information{
+      position: relative;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      justify-content: center;
+      margin-top: 20vh;
+
+    }
+    .text_up{
+      position: relative;
+      max-width: 25vw;
+      text-align: left;
+      margin-top: -8vh;
+    }
+    .tea_information2{
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      position: relative;
+      margin-top: 10vh;
+      margin-left: 68vw;
+      margin-top: -25vh;
+    }
+    .tea_down{
+      max-width: 15vw;
+      margin-left: 3vw;
+
+    }
+    a{
+
+      text-decoration: none;
+      margin-left: 3vw;
+    }
+    .logo{
+      width: 3vw;
+    }
+    .up{
+      width: 100%;
+    }
+
+    .line {
+      height: 4px;
+      width: 100%;
+      background-color: rgb(170, 169, 233);
+      border-radius: 5px;
+    }
+
+    .hamburger {
+      position: absolute;
+      top: 10px;
+      right: 60px;
+      width: 40px;
+      height: 30px;
+      margin-top: 25px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      /* Рівномірний розподіл полосок */
+      cursor: pointer;
+      /* Вказівник змінюється на "руку" при наведенні */
+    }.down {
+       position: fixed;
+       bottom: 0;
+       left: 0;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       background-color: rgb(212, 192, 232);
+       text-align: center;
+       width: 100%;
+       height: 5vh;
+     }@media (max-width: 1100px) {
+      .tea_information2{
+
+        margin-top: -15vh;
+      }
+      .img2 {
+
+        margin-top: -35vh;
+        margin-left: 33vw;
+      }
+
+    }@media (max-width: 850px) {
+      .hamburger{
+        height: 2vw;
+        margin-top: -0.8vh;
+        margin-top: 2vh;
+      }
+      .line{
+        height: 0.4vw;
+      }
+      .logo {
+        width: 10vw;
+      }
+      .img2 {
+        width: 80%;
+        margin: 10px auto;
+        display: block;
+        z-index: -1;
+      }
+      .tea_information2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-left: 0;
+      }
+      .tea_information {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        gap: 20px;
+        padding: 10px;
+        margin-top: 0;
+      }
+      .img1 {
+        width: 60%;
+        margin: 10px 0;
+      }
+      .img3 {
+
+        width: 65vw;
+        margin: 70px 0;
+
+      }
+      .text_up {
+        position: static; /* Ніякого абсолютного позиціонування */
+        width: 90%; /* Оптимізація для маленьких екранів */
+        margin: 0 auto; /* Центрування */
+        text-align: center;
+        padding: 10px;
+      }
+      .tea_down {
+        width: 90vw;
+
+
+        margin: 0;
+        box-sizing: border-box;
+      }
+      .down {
+        position: fixed; /* Фіксований блок внизу */
+        bottom: 0;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(212, 192, 232);
+        text-align: center;
+        width: 100%;
+        height: 5vh;
+      }
+    }
+
+  </style>
+</head>
+<body>
+<div class="ip">
+  <img class="logo" src="https://i.pinimg.com/736x/7b/73/db/7b73dba789cee14d63b668044935909f.jpg" alt="">
+  <div class="hamburger">
+    <div class="line"></div>
+    <div class="line"></div>
+    <div class="line"></div>
+  </div>
+</div>
+
+<div class="tea_information">
+  <p class="text_up">"Життя — як чашка чаю: буває гірким, але завжди можна додати меду. Або лимона.
+    Або і того, і іншого. Головне — знайти свій ідеальний рецепт щастя!"</p>
+  <img class="img1" src="https://i.pinimg.com/736x/b0/c9/5d/b0c95d3a9e58a74f5e3c4502caa59436.jpg" alt="">
+</div>
+<div class="tea_information2">
+  <img class="img3" src="https://i.pinimg.com/736x/32/13/71/32137124f1f2e29057e664e9e579ee69.jpg" alt="">
+  <p class="tea_down">"У мене є теорія: все, що можна вирішити за чашкою чаю, не варто вирішувати взагалі.
+    Адже чай робить все за нас."</p>
+  <a href="https://newtea.ua/chay?gad_source=1&gclid=CjwKCAiA6t-6BhA3EiwAltRFGGPXvHLkMFFblC9Nk-yyC3bFauz1Viy4QyvwznHrPdkhGUBDErUquhoCkAEQAvD_BwE">Читати більше</a>
+</div>
+<img class="img2" src="https://i.pinimg.com/736x/d6/d4/6d/d6d46d36714d7239e8898168e4201782.jpg" alt="">
+<div class="down">
+  <p  contenteditable="true">
+    Нажміть, щоб змінити
+  </p>
+</div>
+</body>
+</html>
